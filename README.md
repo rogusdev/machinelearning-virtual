@@ -18,6 +18,12 @@ Or install with Brew on OS X: https://brew.sh/
 
     brew cask install virtualbox vagrant
 
+## Initializing
+
+Copy this repo's files into the directory you want to use for your new project:
+
+    PROJECTDIR=some_new_dir git clone --depth=1 --branch=master git@github.com:rogusdev/machinelearning-virtual.git $PROJECTDIR && rm -rf !$/.git
+
 ## Running
 
 Create the virtualbox ("vbox") virtual machine with vagrant:
