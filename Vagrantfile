@@ -2,8 +2,9 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "ubuntu/bionic64"
-  config.vm.box_version = "20180927.0.0"
+  # https://www.vagrantup.com/docs/boxes.html#official-boxes
+  config.vm.box = "bento/ubuntu-18.04"
+  config.vm.box_version = "201812.27.0"
   config.vm.box_check_update = false
 
   config.vm.provider "virtualbox" do |vb|
