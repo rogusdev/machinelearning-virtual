@@ -26,17 +26,17 @@ sudo usermod -a -G docker $USER
 sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl libncurses5-dev xz-utils libxml2-dev libxmlsec1-dev libffi-dev
 # tk-dev llvm
 
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.6.0
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.6.3
 echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
 echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 
+# https://www.python.org/downloads/
 asdf plugin-add python https://github.com/tuvistavie/asdf-python.git
 asdf install python 2.7.15
-asdf install python 3.7.0
-asdf global python 3.7.0 2.7.15
-pip install --upgrade pip
+asdf install python 3.7.2
+asdf global python 3.7.2 2.7.15
 
 pip install --upgrade pip awscli
 pip install --upgrade numpy scipy pandas matplotlib scikit-learn
