@@ -5,18 +5,18 @@ With this approach, you guarantee a completely clean environment for running you
 
 ## Installation
 
-Install VirtualBox: https://www.virtualbox.org/wiki/Downloads
-
-Then install Vagrant: https://www.vagrantup.com/downloads.html
- (Vagrant is a wrapper around VirtualBox and so requires it)
-
-Or install with Chocolatey on Windows: https://chocolatey.org/
+On Windows, install with Chocolatey: https://chocolatey.org/
 
     choco install virtualbox vagrant
 
-Or install with Brew on OS X: https://brew.sh/
+On OS X, install with Brew: https://brew.sh/
 
     brew cask install virtualbox vagrant
+
+Or manually install VirtualBox: https://www.virtualbox.org/wiki/Downloads
+
+Then manually install Vagrant: https://www.vagrantup.com/downloads.html
+ (Vagrant is a wrapper around VirtualBox and so requires it)
 
 ## Initializing
 
@@ -52,4 +52,4 @@ Or if you want to start over completely clean, remove it (so you can recreate it
 
     vagrant destroy
 
-You can confirm it's existence and stopped state by opening up VirtualBox and checking its list there.
+You can confirm its existence and stopped state by opening up VirtualBox and checking it's listed there.
